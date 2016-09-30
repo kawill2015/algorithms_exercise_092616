@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		//4. Write a function which takes an array of integers and returns an array with any duplicate integers removed.
+		//[1,1,2,3,1,2,3] -> [1,2,3]
+		//[1,4,4,4,2,2,4,4,4] -> [1,4,2]
+
+		var arr = [1,1,2,3,1,2,3]
+		//var arr = [1,4,4,4,2,2,4,4,4];
+
+
+
+		function duplicateNumber(input) {
+			var output = [];
+			for (var i = 0; i < input.length; i++) {
+				if (!output.includes(input[i])) {
+					output.push(input[i]);
+				}
+			}
+			return output;
+
+		}
+		console.log(duplicateNumber(arr));
+
+//		debugger;
+//		for (var i = 0; i < arr.length; i++) {
+//			if (arr2.includes(arr[i] == false)) {
+//			} else {
+//				arr2.push(arr[i]);
+//			}
+//
+//		}
+	</script>
+</body>
+</html>
